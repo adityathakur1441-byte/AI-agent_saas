@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Support Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🤖 AI Support Assistant</h1>
+<!-- ui login page -->
+<div class="box">
+    <h2>🔐 Register</h2>
+
+    <input id="registerUsername" placeholder="Username">
+    <input id="registerEmail" placeholder="Email">
+    <input id="registerPassword" placeholder="Password">
+
+    <button onclick="registerUser()">
+        Register
+    </button>
+
+    <p id="registerResult"></p>
+</div>
+
+<div class="box">
+    <h2>🔑 Login</h2>
+
+    <input id="loginEmail" placeholder="Email">
+    <input id="loginPassword" placeholder="Password">
+
+    <button onclick="loginUser()">
+        Login
+    </button>
+
+    <p id="loginResult"></p>
+</div>
+
+<!-- ORDER TRACKING -->
+<div class="box">
+    <h2>📦 Track Your Order</h2>
+    <input id="orderId" placeholder="Enter Order ID">
+    <button onclick="trackOrder()">Track</button>
+    <p id="orderResult"></p>
+</div>
+
+<!-- CHAT SUPPORT -->
+<div class="box">
+    <h2>💬 Customer Support</h2>
+    <input id="chatMsg" placeholder="Ask your question">
+    <button onclick="chat()">Send</button>
+    <p id="chatResult"></p>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
